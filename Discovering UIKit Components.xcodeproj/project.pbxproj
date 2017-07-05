@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C93D1AC01EFDAF2500B40D46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D1ABF1EFDAF2500B40D46 /* AppDelegate.swift */; };
-		C93D1AC21EFDAF2500B40D46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D1AC11EFDAF2500B40D46 /* ViewController.swift */; };
 		C93D1AC51EFDAF2500B40D46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93D1AC31EFDAF2500B40D46 /* Main.storyboard */; };
 		C93D1AC71EFDAF2500B40D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93D1AC61EFDAF2500B40D46 /* Assets.xcassets */; };
 		C93D1ACA1EFDAF2500B40D46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93D1AC81EFDAF2500B40D46 /* LaunchScreen.storyboard */; };
+		C93D1AD21EFDB02F00B40D46 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D1AD11EFDB02F00B40D46 /* TableViewController.swift */; };
+		C93D1AD51EFDC58500B40D46 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D1AD41EFDC58500B40D46 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C93D1ABC1EFDAF2500B40D46 /* Discovering UIKit Components.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discovering UIKit Components.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93D1ABF1EFDAF2500B40D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C93D1AC11EFDAF2500B40D46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C93D1AC41EFDAF2500B40D46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C93D1AC61EFDAF2500B40D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C93D1AC91EFDAF2500B40D46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C93D1ACB1EFDAF2500B40D46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C93D1AD11EFDB02F00B40D46 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C93D1AD41EFDC58500B40D46 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		C93D1ABE1EFDAF2500B40D46 /* Discovering UIKit Components */ = {
 			isa = PBXGroup;
 			children = (
-				C93D1ABF1EFDAF2500B40D46 /* AppDelegate.swift */,
-				C93D1AC11EFDAF2500B40D46 /* ViewController.swift */,
 				C93D1AC31EFDAF2500B40D46 /* Main.storyboard */,
+				C93D1AD11EFDB02F00B40D46 /* TableViewController.swift */,
+				C93D1AD31EFDB03B00B40D46 /* Supporting Files */,
+			);
+			path = "Discovering UIKit Components";
+			sourceTree = "<group>";
+		};
+		C93D1AD31EFDB03B00B40D46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C93D1ABF1EFDAF2500B40D46 /* AppDelegate.swift */,
 				C93D1AC61EFDAF2500B40D46 /* Assets.xcassets */,
+				C93D1AD41EFDC58500B40D46 /* Helpers.swift */,
 				C93D1AC81EFDAF2500B40D46 /* LaunchScreen.storyboard */,
 				C93D1ACB1EFDAF2500B40D46 /* Info.plist */,
 			);
-			path = "Discovering UIKit Components";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C93D1AC21EFDAF2500B40D46 /* ViewController.swift in Sources */,
+				C93D1AD21EFDB02F00B40D46 /* TableViewController.swift in Sources */,
 				C93D1AC01EFDAF2500B40D46 /* AppDelegate.swift in Sources */,
+				C93D1AD51EFDC58500B40D46 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +316,7 @@
 				C93D1AD01EFDAF2500B40D46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
