@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewController: UITableViewController, UITextFieldDelegate {
+class ComponentsTableViewController: UITableViewController, UITextFieldDelegate {
     let sectionTitles = ["Générique", "Présentation", "Interaction Basique", "Sélecteurs", "Chargement"]
 
     override func viewDidLoad() {
