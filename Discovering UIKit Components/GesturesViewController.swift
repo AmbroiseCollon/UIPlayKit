@@ -131,16 +131,16 @@ extension GesturesViewController {
         updateTitle(with: "UISwipeGestureRecognizer")
 
         switch sender.direction {
-        case UISwipeGestureRecognizerDirection.right:
+        case UISwipeGestureRecognizer.Direction.right:
             textView.text = "Direction : right"
             animateSwipe(translationX: view.frame.width, y: 0)
-        case UISwipeGestureRecognizerDirection.left:
+        case UISwipeGestureRecognizer.Direction.left:
             textView.text = "Direction : left"
             animateSwipe(translationX: -view.frame.width, y: 0)
-        case UISwipeGestureRecognizerDirection.up:
+        case UISwipeGestureRecognizer.Direction.up:
             textView.text = "Direction : up"
             animateSwipe(translationX: 0, y: -view.frame.height)
-        case UISwipeGestureRecognizerDirection.down:
+        case UISwipeGestureRecognizer.Direction.down:
             textView.text = "Direction : down"
             animateSwipe(translationX: 0, y: view.frame.height)
         default:

@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         }
     }
 
-    private func getOptions() -> UIViewAnimationOptions {
+    private func getOptions() -> UIView.AnimationOptions {
         switch animation.easing {
         case .easeIn:
             return [.curveEaseIn]
